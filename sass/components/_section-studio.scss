@@ -1,0 +1,18 @@
+/* section */
+.section {
+  padding-top: 94px;
+  &:nth-child(4) {
+    background-color: $secondary-bcr;
+  }
+  &-title {
+    color: $title-text-color;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
