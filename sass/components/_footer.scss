@@ -3,7 +3,7 @@
 .footer {
   background-color: $footer-bcr-color;
   .container {
-    width: 1200px;
+    // width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -11,10 +11,10 @@
     padding-top: 48px;
   }
   .container-footer {
-    display: flex;
-    align-items: baseline;
-    justify-content: left;
-    width: 1200px;
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: left;
+    // width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -119,13 +119,13 @@
 }
 
 .form-footer {
-  width: 570px;
+  // width: 570px;
   /* outline: 1px solid tomato; */
   margin-left: auto;
   margin-right: auto;
 }
 .form-field {
-  display: inline-flex;
+  // display: inline-flex;
   margin-top: 20px;
   justify-content: space-evenly;
   input {

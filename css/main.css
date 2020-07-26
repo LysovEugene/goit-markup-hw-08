@@ -286,45 +286,22 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 3px solid red; */
+  outline: 3px solid red;
 }
 
 /* header */
-.page-header {
-  width: 1600px;
-}
-
 /* Site nav */
 .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   min-height: 80px;
-}
-
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .site-nav .item {
   /* outline: 3px solid tomato; */
   margin-right: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .site-nav .item:last-child {
@@ -332,21 +309,14 @@ body {
 }
 
 .site-nav .link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #212121;
   text-decoration: none;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   position: relative;
-  height: 80px;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -359,7 +329,6 @@ body {
 .site-nav .link.current {
   color: #2196f3;
   position: relative;
-  height: 80px;
 }
 
 .site-nav .link.current::after {
@@ -374,6 +343,9 @@ body {
 }
 
 .site-nav .phone-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #757575;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -391,7 +363,6 @@ body {
 }
 
 .phone-email_img {
-  display: inline-block;
   /* width: 15px;
   height: 11px; */
   margin-right: 10px;
@@ -423,8 +394,6 @@ body {
 /* hero */
 /* overlay */
 .overlay {
-  height: 600px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: black;
@@ -436,10 +405,7 @@ body {
 
 .hero {
   /* background-color: var(--primary-text-color); */
-  text-align: center;
   letter-spacing: 0.06em;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -495,19 +461,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 50px;
 }
 
 /* преимущества */
-.feature-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .feature-list .title {
   color: #212121;
   font-weight: 700;
@@ -529,10 +485,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.feuture-container {
-  padding-bottom: 94px;
 }
 
 .p-feature-list {
@@ -567,6 +519,23 @@ body {
 }
 
 /* чем мы занимаемся */
+.we-do-container {
+  padding-bottom: 94px;
+  padding-top: 0;
+}
+
+@media screen and (max-width: 1139px) {
+  .we-do-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1139px) {
+  .we-do-container .section-title {
+    display: none;
+  }
+}
+
 .we-do-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -613,23 +582,12 @@ body {
   margin-right: 0;
 }
 
-.we-do-container {
-  padding-bottom: 94px;
-  padding-top: 0;
-}
-
 /* наша команда */
 .our-team-container {
   padding-bottom: 94px;
 }
 
 .our-team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -643,17 +601,11 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
-.our-team-list .foto {
-  margin-bottom: 30px;
-}
-
 .our-team-list .item {
-  margin-right: 30px;
-  height: 422px;
+  height: 450px;
   background-color: #fff;
   padding-bottom: 24px;
   -webkit-box-shadow: none;
@@ -682,7 +634,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -690,9 +641,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-right: 10px;
 }
 
@@ -740,15 +688,6 @@ body {
 /* постоянные клиенты */
 .section-clients {
   padding-bottom: 94px;
-}
-
-.clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .clients-list .item {
@@ -802,7 +741,6 @@ body {
 }
 
 .footer .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -811,16 +749,6 @@ body {
 }
 
 .footer .container-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -942,16 +870,12 @@ body {
 }
 
 .form-footer {
-  width: 570px;
   /* outline: 1px solid tomato; */
   margin-left: auto;
   margin-right: auto;
 }
 
 .form-field {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin-top: 20px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -1025,7 +949,7 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 30px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
@@ -1034,7 +958,7 @@ textarea {
 }
 
 .form-order-title {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -1140,7 +1064,7 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 30px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
@@ -1261,7 +1185,7 @@ textarea {
 
 .filter .button-filter {
   display: inline-block;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   color: #212121;
   background-color: #f5f4fa;
   font-weight: 500;

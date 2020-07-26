@@ -1,4 +1,18 @@
 /* чем мы занимаемся */
+.we-do-container {
+  @media screen and (max-width: 1139px) {
+    display: none;
+  }
+
+  padding-bottom: 94px;
+  padding-top: 0;
+  .section-title {
+    @media screen and (max-width: 1139px) {
+      display: none;
+    }
+  }
+}
+
 .we-do-list {
   display: flex;
   align-items: center;
@@ -32,8 +46,4 @@
       margin-right: 0;
     }
   }
-}
-.we-do-container {
-  padding-bottom: 94px;
-  padding-top: 0;
 }
