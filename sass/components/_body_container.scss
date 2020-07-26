@@ -2,13 +2,13 @@ body {
   background-color: $primary-white-color;
   color: $primary-text-color;
 
-  font-family: $main-font;
+  font-family: Roboto, sans-serif;
   letter-spacing: -0.003em;
   font-size: 14px;
   line-height: 1.71;
 }
 .container {
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
