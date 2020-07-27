@@ -4,6 +4,7 @@
   // display: flex;
   // align-items: center;
   .title {
+    text-align: center;
     color: $title-text-color;
 
     font-weight: 700;
@@ -13,9 +14,9 @@
     margin-top: 0;
     margin-bottom: 10px;
   }
-  .item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // .item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   .foto {
     padding: 25px 100px;
     background-color: $secondary-bcr;
@@ -32,10 +33,11 @@
 .p-feature-list {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 .features-icon {
   display: flex;
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   background-color: $secondary-bcr;
   border-radius: 4px;

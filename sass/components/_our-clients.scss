@@ -1,18 +1,25 @@
 /* постоянные клиенты */
-.section-clients {
-  padding-bottom: 94px;
-}
+// .section-clients {
+//   padding-bottom: 94px;
+// }
 .clients-list {
-  // display: flex;
-  // justify-content: center;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .item {
     align-items: center;
-    margin-left: 30px;
+
     border-radius: 4px;
+    @media screen and (max-width: 767px) {
+      max-width: 210px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
   }
-  &:first-child {
-    margin-left: 0;
-  }
+  // &:first-child {
+  //   margin-left: 0;
+  // }
 }
 
 .link-clients {
