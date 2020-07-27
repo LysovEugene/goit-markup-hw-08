@@ -447,17 +447,21 @@ body {
   outline: 3px solid tomato;
 }
 
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .section {
     max-width: 480px;
-    padding-top: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section {
     max-width: 768px;
-    padding-top: 60px;
   }
 }
 
@@ -505,6 +509,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .feuture-container {
+    padding-bottom: 60px;
+  }
 }
 
 .p-feature-list {
@@ -633,8 +643,8 @@ body {
 
 .our-team-list .title {
   color: #212121;
-  margin-bottom: 16px;
-  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-top: 30px;
   padding: 0;
   text-transform: none;
   font-weight: 500;
@@ -648,8 +658,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 450px;
-  height: 320px;
+  width: 100%;
+  height: auto;
 }
 
 .our-team-list .item {
@@ -737,14 +747,12 @@ body {
 }
 
 /* постоянные клиенты */
-@media screen and (max-width: 767px) {
-  .clients-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+.clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .clients-list .item {
@@ -752,18 +760,25 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 4px;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
   .clients-list .item {
-    max-width: 210px;
     margin-left: 30px;
     margin-bottom: 30px;
+    width: calc((100% - 2 * 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list .item {
+    margin: 15px;
+    width: calc((100% - 6 * 15px) / 3);
   }
 }
 
 .link-clients {
-  width: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

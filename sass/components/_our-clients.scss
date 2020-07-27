@@ -3,27 +3,31 @@
 //   padding-bottom: 94px;
 // }
 .clients-list {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  // @media screen and (max-width: 1140px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
   .item {
     align-items: center;
-
     border-radius: 4px;
+    width: 100%;
     @media screen and (max-width: 767px) {
-      max-width: 210px;
+      // max-width: 210px;
       margin-left: 30px;
       margin-bottom: 30px;
+      width: calc((100% - 2 * 60px) / 2);
+    }
+    @media screen and (min-width: 768px) {
+      margin: 15px;
+      width: calc((100% - 6 * 15px) / 3);
     }
   }
-  // &:first-child {
-  //   margin-left: 0;
-  // }
 }
 
 .link-clients {
-  width: 170px;
+  // width: 170px;
   display: flex;
   justify-content: center;
   cursor: pointer;

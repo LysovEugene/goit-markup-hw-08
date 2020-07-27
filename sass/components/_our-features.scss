@@ -26,9 +26,11 @@
   }
 }
 
-// .feuture-container {
-//   padding-bottom: 94px;
-// }
+.feuture-container {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+}
 
 .p-feature-list {
   margin: 0;
