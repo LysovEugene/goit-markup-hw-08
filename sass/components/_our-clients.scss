@@ -1,7 +1,9 @@
 /* постоянные клиенты */
-// .section-clients {
-//   padding-bottom: 94px;
-// }
+.section-clients {
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+}
 .clients-list {
   display: flex;
   flex-wrap: wrap;
