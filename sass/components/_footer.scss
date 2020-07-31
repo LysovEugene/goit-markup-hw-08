@@ -6,9 +6,28 @@
   .container-footer {
     text-align: center;
     padding-bottom: 48px;
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 60px;
+      text-align: center;
+    }
   }
 }
-
+.footer-adress {
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    flex-basis: 50%;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+.footer-join {
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    flex-basis: 50%;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
 .title-footer .title {
   margin-top: 20px;
   color: $primary-white-color;
@@ -103,6 +122,11 @@
   /* outline: 1px solid tomato; */
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    flex-basis: 100%;
+    margin-top: 60px;
+    margin-left: 166px;
+  }
 }
 .form-field {
   // display: inline-flex;
