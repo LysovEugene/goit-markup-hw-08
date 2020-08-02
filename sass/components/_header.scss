@@ -23,6 +23,11 @@
     display: flex;
     justify-content: space-between;
   }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    min-height: 80px;
+    justify-content: space-around;
+  }
 }
 
 .pages-header {
@@ -31,11 +36,19 @@
     display: flex;
     list-style: none;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 150px;
+  }
 }
 .contacts-header {
   display: inline-block;
   justify-content: right;
   align-items: flex-end;
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    justify-content: flex-end;
+  }
 }
 .site-nav {
   .name {
@@ -47,6 +60,7 @@
       }
     }
   }
+
   .phone + .phone {
     @media screen and (max-width: 767px) {
       margin-top: 16px;
@@ -60,6 +74,11 @@
     }
     @media screen and (min-width: 768px) {
       margin-left: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
     }
     display: flex;
 
@@ -81,6 +100,19 @@
       fill: $accent-color;
     }
   }
+
+  .item {
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .item:last-child {
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
+  }
   .link.current {
     color: $accent-color;
     position: relative;
@@ -95,6 +127,11 @@
     background-color: $accent-color;
     left: 0;
     bottom: 0;
+  }
+}
+.phone {
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
